@@ -19,7 +19,7 @@ A Flask-based web application to help job seekers manage, track, and analyze the
 ## 🛠 Technologies Used
 
 - **Backend**: Python, Flask, Flask-WTF, Flask-Login, Flask-Bcrypt
-- **Frontend**: HTML, CSS, Jinja2 Templates
+- **Frontend**: HTML, CSS
 - **Database**: SQLite
 - **Hosting**: Render.com
 
