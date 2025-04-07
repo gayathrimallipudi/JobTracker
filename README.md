@@ -4,7 +4,7 @@ A Flask-based web application to help job seekers manage, track, and analyze the
 
 
 ## 🚀 Live Demo
-🔗 [https://jobtracker-8kmt.onrender.com/](https://jobtracker-8kmt.onrender.com/) *(hosted on Render)*
+🔗 [https://jobtracker-i9df.onrender.com/](https://jobtracker-i9df.onrender.com/) *(hosted on Render)*
 
 
 ## 📌 Features
@@ -22,28 +22,17 @@ A Flask-based web application to help job seekers manage, track, and analyze the
 - **Frontend**: HTML, CSS
 - **Database**: SQLite
 - **Hosting**: Render.com
+- **Containerization**: Docker
 
 
 ## ⚙️ Getting Started (Local Setup)
+**1. Clone the repo**
+- git clone https://github.com/gayathrimallipudi/JobTracker.git
+- cd JobTracker
 
-```bash
-# 1. Clone the repo
-git clone https://github.com/gayathrimallipudi/JobTracker.git
-cd JobTracker
+**2. Build the Docker image**
+- docker build -t jobtracker-app .
 
-# 2. Create and activate virtual environment
-python3 -m venv venv
-source venv/bin/activate
-
-# 3. Install dependencies
-pip install -r requirements.txt
-
-# 4. (Optional) Delete old DB if exists
-rm jobs.db
-
-# 5. Run the DB setup script
-python3 creating_db_with_tables.py
-
-# 6. Start the Flask app
-python3 app.py
+**3. Run the container**
+- docker run -p 5000:5000 jobtracker-app
 
